@@ -6,24 +6,21 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function formatNumber(value: number): string {
-  return new Intl.NumberFormat("en-US").format(value);
+  return new Intl.NumberFormat("sq-XK").format(value);
 }
 
 export const SITE = {
   name: "L&LL",
-  fullName: "L&LL – French Language Center",
-  tagline: "Master French. Open New Opportunities.",
+  fullName: "L&LL – Qendra e Kurseve të Gjuhës Frënge",
+  tagline: "Mësoni Frëngjisht. Hapni Mundësi të Reja.",
   description:
-    "Learn French with experienced instructors through interactive lessons, internationally recognized programs, and personalized support.",
+    "Mësoni gjuhën frënge përmes kurseve interaktive nga niveli A1 deri në B2, përgatitje për DELF, dhe mësim online. Prishtinë, Kosovë.",
   url: "https://ll-french.center",
-  email: "bonjour@ll-french.center",
-  phone: "+33 1 42 00 00 00",
-  address: "12 Rue de Rivoli, 75001 Paris, France",
-  locale: "en",
+  phone: "+383 48 631 432",
+  whatsapp: "https://wa.me/38348631432",
+  address: "Prishtinë, Kosovë",
+  locale: "sq",
   social: {
-    instagram: "https://instagram.com/llfrench",
-    facebook: "https://facebook.com/llfrench",
-    linkedin: "https://linkedin.com/company/llfrench",
-    youtube: "https://youtube.com/@llfrench",
+    instagram: "https://www.instagram.com/llkursefrengjisht/",
   },
 } as const;

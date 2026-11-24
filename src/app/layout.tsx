@@ -32,7 +32,7 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: `${SITE.fullName} | Premium French Education`,
+    default: `${SITE.fullName} | Mësoni Frëngjisht në Prishtinë`,
     template: `%s | ${SITE.name}`,
   },
   description: SITE.description,
@@ -40,19 +40,19 @@ export const metadata: Metadata = {
     icon: "/favicon.svg",
   },
   keywords: [
-    "French language school",
+    "kurse frëngjisht",
+    "mëso frëngjisht",
     "DELF",
-    "DALF",
-    "learn French",
-    "Business French",
-    "Paris French courses",
+    "gjuhë frënge Prishtinë",
+    "kurse online frëngjisht",
     "L&LL",
+    "A1 A2 B1 B2",
   ],
   authors: [{ name: SITE.fullName }],
   creator: SITE.fullName,
   openGraph: {
     type: "website",
-    locale: "en_US",
+    locale: "sq_XK",
     url: SITE.url,
     siteName: SITE.fullName,
     title: SITE.tagline,
@@ -84,14 +84,11 @@ const jsonLd = {
   name: SITE.fullName,
   description: SITE.description,
   url: SITE.url,
-  email: SITE.email,
   telephone: SITE.phone,
   address: {
     "@type": "PostalAddress",
-    streetAddress: "12 Rue de Rivoli",
-    addressLocality: "Paris",
-    postalCode: "75001",
-    addressCountry: "FR",
+    addressLocality: "Prishtinë",
+    addressCountry: "XK",
   },
   sameAs: Object.values(SITE.social),
 };
@@ -103,7 +100,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="sq"
       className={`${inter.variable} ${manrope.variable} ${playfair.variable} ${spaceGrotesk.variable}`}
     >
       <body className="font-body antialiased">
@@ -111,7 +108,7 @@ export default function RootLayout({
           href="#main-content"
           className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[10000] focus:rounded-full focus:bg-luxury-gold focus:px-4 focus:py-2 focus:text-dark-navy"
         >
-          Skip to content
+          Kalo te përmbajtja
         </a>
         <script
           type="application/ld+json"

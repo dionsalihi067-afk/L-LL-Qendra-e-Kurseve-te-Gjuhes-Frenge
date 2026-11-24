@@ -27,7 +27,7 @@ function CourseCard({
       <motion.div style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}>
         <Link
           ref={ref}
-          href={`/courses#${course.id}`}
+          href={`/kurset#${course.id}`}
           className="group relative block overflow-hidden rounded-[1.75rem] border border-white/50 bg-white/70 p-6 shadow-soft backdrop-blur-xl transition-shadow duration-500 hover:shadow-lift"
           onMouseEnter={() => {
             setVariant("hover");
@@ -67,11 +67,8 @@ function CourseCard({
           <p className="relative mt-2 text-sm leading-relaxed text-dark-navy/60">
             {course.description}
           </p>
-          <div className="relative mt-6 flex items-center justify-between border-t border-dark-navy/8 pt-4 text-xs text-dark-navy/50">
-            <span>
-              {course.duration} · {course.hours}
-            </span>
-            <span className="font-numbers font-medium text-french-blue">{course.price}</span>
+          <div className="relative mt-6 border-t border-dark-navy/8 pt-4">
+            <span className="text-xs font-medium text-french-blue">Mëso më shumë →</span>
           </div>
         </Link>
       </motion.div>
@@ -89,12 +86,12 @@ export function CoursesShowcase({ limit }: { limit?: number }) {
         <div className="mb-12 flex flex-col items-start justify-between gap-6 md:mb-16 md:flex-row md:items-end">
           <SectionHeader
             className="mb-0"
-            eyebrow="Programs"
-            title={<span className="font-display">A pathway for every ambition.</span>}
-            description="From first words to DALF mastery—structured, beautiful, and relentlessly practical."
+            eyebrow="Programet"
+            title={<span className="font-display">Një rrugë për çdo ambicie.</span>}
+            description="Nga fjalët e para deri në rrjedhshmëri — kurse të strukturuara sipas CEFR, nga A1 deri në B2."
           />
-          <MagneticButton href="/courses" variant="ghost">
-            View all courses
+          <MagneticButton href="/kurset" variant="ghost">
+            Shiko të gjitha kurset
           </MagneticButton>
         </div>
         <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3" style={{ perspective: 1000 }}>

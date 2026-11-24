@@ -10,20 +10,20 @@ export function CtaBanner() {
         <div className="absolute -bottom-28 -left-10 h-80 w-80 rounded-full bg-french-red/20 blur-[100px]" />
         <div className="relative max-w-2xl">
           <p className="font-heading text-xs font-semibold tracking-[0.3em] text-luxury-gold uppercase">
-            Begin today
+            Filloni Sot
           </p>
           <h2 className="mt-4 font-display text-4xl leading-tight md:text-5xl lg:text-6xl">
-            Your French chapter starts with a single conversation.
+            Rruga juaj drejt frëngjishtes fillon me një bisedë.
           </h2>
           <p className="mt-5 text-base text-white/70 md:text-lg">
-            Book a complimentary placement session. Leave with clarity, a pathway, and the confidence to begin.
+            Na kontaktoni përmes WhatsApp për një bisedë orientuese dhe filloni mësimin me besim.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <MagneticButton href="/contact" variant="gold">
-              Book Placement
+            <MagneticButton href="/regjistrohu" variant="gold">
+              Regjistrohu Tani
             </MagneticButton>
-            <MagneticButton href="/courses" variant="secondary">
-              Browse Programs
+            <MagneticButton href="/kurset" variant="secondary">
+              Shiko Kurset
             </MagneticButton>
           </div>
         </div>

@@ -4,28 +4,28 @@ import { Reveal } from "@/components/ui/reveal";
 import { CtaBanner } from "@/components/sections/cta-banner";
 
 export const metadata: Metadata = {
-  title: "Online Classes",
+  title: "Kurse Online",
   description:
-    "Studio-quality live French classes online—interactive boards, breakout rooms, recordings, and the same L&LL standard worldwide.",
+    "Kurse live online të gjuhës frënge me cilësi të lartë. Mësoni nga kudo me L&LL.",
 };
 
-export default function OnlineClassesPage() {
+export default function OnlinePage() {
   return (
     <>
       <PageHero
         eyebrow="Online"
-        title="Paris quality. Anywhere you are."
-        description="Our digital atelier delivers the same intimacy and rigor as our campus—live instructors, interactive tools, and cohorts that feel close."
-        ctaLabel="Join an online cohort"
+        title="Mësoni frëngjisht nga kudo."
+        description="Kurse live online me cilësi të njëjtë si ato në klasë — mësim interaktiv, praktikë e vazhdueshme, dhe fleksibilitet i plotë."
+        ctaLabel="Regjistrohu për kurse online"
       />
 
       <section className="section-padding pt-0">
         <div className="container-luxury grid gap-5 md:grid-cols-2 xl:grid-cols-4">
           {[
-            "Live small-group sessions",
-            "Interactive digital whiteboard",
-            "Breakout speaking rooms",
-            "Session recordings on demand",
+            "Mësime live në grupe të vogla",
+            "Mjete interaktive digjitale",
+            "Praktikë e fokusuar në të folur",
+            "Orare fleksibël",
           ].map((item, i) => (
             <Reveal key={item} delay={i * 0.06}>
               <div className="rounded-[1.5rem] border border-white/60 bg-white/70 px-5 py-8 text-center shadow-soft backdrop-blur">

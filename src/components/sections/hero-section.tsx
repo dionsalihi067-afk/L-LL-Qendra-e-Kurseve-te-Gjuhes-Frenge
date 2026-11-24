@@ -1,25 +1,14 @@
 "use client";
 
-import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { MagneticButton } from "@/components/ui/magnetic-button";
 import { SITE } from "@/lib/utils";
 
-const ParisScene = dynamic(
-  () => import("@/components/three/paris-scene").then((m) => m.ParisScene),
-  {
-    ssr: false,
-    loading: () => (
-      <div className="absolute inset-0 bg-gradient-to-br from-dark-navy via-[#0c1f33] to-french-blue" />
-    ),
-  },
-);
-
 export function HeroSection() {
   return (
     <section className="relative isolate min-h-[100svh] overflow-hidden bg-dark-navy text-white">
-      <ParisScene />
+      <div className="absolute inset-0 bg-gradient-to-br from-dark-navy via-[#0c1f33] to-french-blue" />
       <div className="absolute inset-0 bg-gradient-to-r from-dark-navy/90 via-dark-navy/55 to-transparent" />
       <div className="absolute inset-0 bg-gradient-to-t from-dark-navy via-transparent to-dark-navy/40" />
 
@@ -40,7 +29,7 @@ export function HeroSection() {
             animate={{ y: "0%" }}
             transition={{ delay: 0.55, duration: 1, ease: [0.22, 1, 0.36, 1] }}
           >
-            Master French.
+            Mësoni Frëngjisht.
           </motion.span>
           <motion.span
             className="mt-2 block overflow-hidden text-gradient-gold"
@@ -48,7 +37,7 @@ export function HeroSection() {
             animate={{ y: "0%", opacity: 1 }}
             transition={{ delay: 0.75, duration: 1, ease: [0.22, 1, 0.36, 1] }}
           >
-            Open New Opportunities.
+            Hapni Mundësi të Reja.
           </motion.span>
         </h1>
 
@@ -58,7 +47,7 @@ export function HeroSection() {
           transition={{ delay: 1, duration: 0.9 }}
           className="mt-8 max-w-xl text-base leading-relaxed text-white/70 md:text-lg"
         >
-          {SITE.description}
+          Kurse të gjuhës frënge nga niveli A1 deri në B2, përgatitje për DELF, dhe mësim online. Prishtinë, Kosovë.
         </motion.p>
 
         <motion.div
@@ -67,11 +56,11 @@ export function HeroSection() {
           transition={{ delay: 1.15, duration: 0.8 }}
           className="mt-10 flex flex-wrap items-center gap-4"
         >
-          <MagneticButton href="/contact" variant="gold" label="Begin">
-            Start Learning
+          <MagneticButton href="/regjistrohu" variant="gold" label="Regjistrohu">
+            Regjistrohu Tani
           </MagneticButton>
-          <MagneticButton href="/courses" variant="secondary" label="Explore">
-            Explore Courses
+          <MagneticButton href="/kurset" variant="secondary" label="Kurset">
+            Shiko Kurset
           </MagneticButton>
         </motion.div>
       </div>
@@ -81,9 +70,9 @@ export function HeroSection() {
         className="absolute bottom-8 left-1/2 z-10 flex -translate-x-1/2 flex-col items-center gap-2 text-white/50"
         animate={{ y: [0, 8, 0] }}
         transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }}
-        aria-label="Scroll to explore"
+        aria-label="Zbuloni më shumë"
       >
-        <span className="font-heading text-[10px] tracking-[0.3em] uppercase">Scroll</span>
+        <span className="font-heading text-[10px] tracking-[0.3em] uppercase">Zbulo</span>
         <ChevronDown className="h-4 w-4" />
       </motion.a>
     </section>

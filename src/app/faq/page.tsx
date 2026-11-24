@@ -4,9 +4,9 @@ import { FaqSection } from "@/components/sections/faq-section";
 import { CtaBanner } from "@/components/sections/cta-banner";
 
 export const metadata: Metadata = {
-  title: "FAQ",
+  title: "Pyetje të Shpeshta",
   description:
-    "Frequently asked questions about L&LL courses, levels, DELF/DALF, schedules, online learning, and corporate training.",
+    "Pyetje të shpeshta rreth kurseve të gjuhës frënge në L&LL — nivelet, DELF, oraret, mësimi online dhe regjistrimi.",
 };
 
 export default function FaqPage() {
@@ -14,9 +14,9 @@ export default function FaqPage() {
     <>
       <PageHero
         eyebrow="FAQ"
-        title="Clarity before you begin."
-        description="Levels, certificates, formats, and timelines—answered with the same precision we bring to every lesson."
-        ctaLabel="Still have questions?"
+        title="Përgjigje para se të filloni."
+        description="Nivelet, certifikatat, formatet dhe oraret — gjithçka që duhet të dini para se të regjistroheni."
+        ctaLabel="Keni pyetje të tjera?"
       />
       <FaqSection />
       <CtaBanner />

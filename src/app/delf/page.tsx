@@ -5,28 +5,27 @@ import { MagneticButton } from "@/components/ui/magnetic-button";
 import { CtaBanner } from "@/components/sections/cta-banner";
 
 export const metadata: Metadata = {
-  title: "DELF / DALF",
+  title: "Përgatitje DELF",
   description:
-    "Official DELF and DALF exam preparation with mock tests, examiner-aligned feedback, and a 98% success culture.",
+    "Përgatituni për provimet zyrtare DELF me kurse të strukturuara në L&LL. Praktikë për të katër aftësitë gjuhësore.",
 };
 
 const LEVELS = [
-  { code: "DELF A1–A2", focus: "Everyday life, survival fluency, foundation grammar." },
-  { code: "DELF B1–B2", focus: "Independent expression, argumentation, academic readiness." },
-  { code: "DALF C1–C2", focus: "Near-native discourse, synthesis, specialized writing." },
+  { code: "DELF A1–A2", focus: "Bazat e komunikimit, fjalorin e përditshëm dhe gramatikën themelore." },
+  { code: "DELF B1–B2", focus: "Shprehje e pavarur, argumentim dhe gatishmëri akademike." },
 ];
 
-export default function DelfDalfPage() {
+export default function DelfPage() {
   return (
     <>
       <PageHero
-        eyebrow="Exams"
-        title="DELF & DALF, without the dread."
-        description="Official diploma preparation that feels calm, strategic, and relentlessly practical—mock exams, scoring clarity, and oral coaching that sticks."
+        eyebrow="Provime"
+        title="Përgatitje DELF me besim."
+        description="Përgatitje e strukturuar për provimet zyrtare DELF — praktikë e dedikuar për të katër aftësitë gjuhësore."
       />
 
       <section className="section-padding pt-0">
-        <div className="container-luxury grid gap-6 md:grid-cols-3">
+        <div className="container-luxury grid gap-6 md:grid-cols-2">
           {LEVELS.map((level, i) => (
             <Reveal key={level.code} delay={i * 0.08}>
               <article className="h-full rounded-[1.75rem] border border-white/60 bg-white/70 p-7 shadow-soft backdrop-blur">
@@ -39,14 +38,13 @@ export default function DelfDalfPage() {
 
         <div className="container-luxury mt-14 max-w-3xl">
           <Reveal>
-            <h2 className="font-display text-3xl md:text-4xl">What you receive</h2>
+            <h2 className="font-display text-3xl md:text-4xl">Çfarë përfshin përgatitja</h2>
             <ul className="mt-6 space-y-3 text-dark-navy/70">
               {[
-                "Full-length mock exams under timed conditions",
-                "Examiner-style rubrics and personalized score reports",
-                "Speaking labs with pronunciation and structure coaching",
-                "Writing ateliers for production tasks and synthesis",
-                "Strategic pacing plans from now until exam day",
+                "Praktikë e strukturuar për dëgjim, lexim, shkrim dhe të folur",
+                "Simulime provimi në kushte reale",
+                "Fokus i veçantë në shqiptim dhe komunikim oral",
+                "Material dhe ushtrime sipas formatit zyrtar DELF",
               ].map((item) => (
                 <li key={item} className="flex gap-3">
                   <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-luxury-gold" />
@@ -55,8 +53,8 @@ export default function DelfDalfPage() {
               ))}
             </ul>
             <div className="mt-8">
-              <MagneticButton href="/contact" variant="gold">
-                Reserve exam coaching
+              <MagneticButton href="/regjistrohu" variant="gold">
+                Regjistrohu për DELF
               </MagneticButton>
             </div>
           </Reveal>

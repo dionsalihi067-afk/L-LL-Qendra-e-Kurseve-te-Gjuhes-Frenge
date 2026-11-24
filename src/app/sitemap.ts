@@ -4,17 +4,12 @@ import { SITE } from "@/lib/utils";
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     "",
-    "/about",
-    "/courses",
-    "/delf-dalf",
-    "/private-lessons",
-    "/business-french",
-    "/online-classes",
-    "/teachers",
-    "/success-stories",
+    "/rreth-nesh",
+    "/kurset",
+    "/delf",
+    "/online",
     "/faq",
-    "/blog",
-    "/contact",
+    "/regjistrohu",
   ];
 
   return routes.map((route) => ({

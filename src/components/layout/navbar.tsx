@@ -56,7 +56,7 @@ export function Navbar() {
             <span className="absolute inset-x-2 bottom-1.5 h-px origin-left scale-x-0 bg-luxury-gold transition-transform duration-500 group-hover:scale-x-100" />
           </span>
           <span className="hidden font-heading text-sm font-semibold tracking-wide text-dark-navy sm:block">
-            French Language Center
+            Qendra e Kurseve
           </span>
         </Link>
 
@@ -122,8 +122,8 @@ export function Navbar() {
 
         <div className="flex items-center gap-3">
           <div className="hidden sm:block">
-            <MagneticButton href="/contact" variant="gold" label="Join" className="!px-5 !py-2.5 text-xs">
-              Start Learning
+            <MagneticButton href="/regjistrohu" variant="gold" label="Regjistrohu" className="!px-5 !py-2.5 text-xs">
+              Regjistrohu
             </MagneticButton>
           </div>
           <button
@@ -169,8 +169,8 @@ export function Navbar() {
                     : null}
                 </div>
               ))}
-              <MagneticButton href="/contact" variant="primary" className="mt-4 w-full">
-                Start Learning
+              <MagneticButton href="/regjistrohu" variant="primary" className="mt-4 w-full">
+                Regjistrohu
               </MagneticButton>
             </nav>
           </motion.div>
